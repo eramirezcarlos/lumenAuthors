@@ -6,17 +6,16 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Laravel\Lumen\Auth\Authorizable;
 
-class Author extends Model 
+class Book extends Model 
 {
 
     use HasFactory;
     /**
-     * The attributes that are mass assignable.
-     *
+     * The attributes that are mass assignable.*
      * @var string[]
      */
     protected $fillable = [
-        'name', 'gender', 'country'
+        'title', 'description', 'price', 'author_id'
     ];
 
 }
